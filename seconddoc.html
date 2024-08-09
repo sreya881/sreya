@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>my website</title>
+    <link rel="stylesheet" href='style.css'>
+</head>
+<body>
+<ul>
+    <li<><a href='#'>Contact me</a></li>  
+    <li<><a href='#'>my projects</a></li>
+    <li<><a href='#'>home</a></li>
+</ul>
+<h1 id=first title>Sreya George</h1>
+<section class="about">
+<img src="file:///C:/Users/HP/Pictures/Camera%20Roll/picture.jpg.jpg"alt="profile picture" width="200" height="200">
+<h2 id="second title">ABOUT ME</h2>
+<p>i am a hard working and smart individual.welcome to my website.
+   send your email to connect with me.
+</p>
+</section>
+<section class="contact">
+    <input type="email"id='mail' placeholder="Your email">
+     <button onclick="sendEmail()" >Click for connecting</button>
+</section>
+<footer>
+    <div class="social-icons">
+        <a href="https://instagram.com"><img src='https://th.bing.com/th?id=OIP.Go2CQNhF_49tkKcpEl_sHQHaHZ&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2' width="55" alt='instagram'></a>
+        <a href="https://linkedin.com"><img src='https://th.bing.com/th?id=OIP.Cverxr-lN_3QjtMAqJFQYwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2' width="55" alt='linkedin'></a>
+        <a href="https://facebook.com"><img src='https://th.bing.com/th?id=OIP.C7OVUM9LtDkmixx34Qg1zQHaHa&w=250&h=250&c=8&rs=1&qlt=30&o=6&dpr=1.3&pid=3.1&rm=2' width="55" alt='facebook'></a>
+        <a href="https://wa.me/+917306455995"><img src='https://th.bing.com/th?id=OIP.pqXy9NhQkUJxPiBMuaeWYAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2' width="55" alt='whatsapp'></a>
+    </div>
+</footer>
+<script type="text/javascript">
+    function sendEmail(){
+        var email=document.getElementById('mail').value;
+        var subject="requst to connect-reg.";
+        var body="hello,I would like to connect with you.";
+        window.location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body)
+        +"&cc=sreyageorge19@gmail.com"
+    }
+</script>
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+</body>
+</html>
